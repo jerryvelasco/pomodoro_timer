@@ -41,7 +41,7 @@ def start_timer():
     short_break_secs = SHORT_BREAK_MIN * 60
     long_break_secs = LONG_BREAK_MIN * 60
 
-    #changes screen the timer text if the cycles are at a repspective cycle 
+    #calls countdown and changes screen the timer text if the cycles are at a certain work cycle
     if WORK_CYCLES % 8 == 0:
         count_down(long_break_secs)
         timer_label.config(text="Break", fg=RED)
